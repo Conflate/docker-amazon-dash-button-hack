@@ -6,13 +6,13 @@ It can write to Google Sheets, Google Calendar and fire event in [IFTTT](https:/
 
 I use it on my [Synology](https://www.synology.com).
 
-To run it:
+To run it, use the following commands:
 ```
 docker rm -f amazon_dash
 docker run --net host -it --name amazon_dash -v $PWD/amazon-dash-private:/amazon-dash-private:ro snowe/amazon-dash-smart-home
 ```
 
-In folder `amazone-dash-private` you should have:
+The following should be present in folder `amazone-dash-private`:
 
 * settings `settings.json` 
 * buttons list `buttons.json` 
